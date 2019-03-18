@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Disallow: /bin/
+Disallow: /css/
+Disallow: /images/
+Disallow: /Additional.Resources.aspx
+Disallow: /Arbitration.Agreement.aspx
+Disallow: /Congratulations.aspx
+Disallow: /Privacy.Policy.aspx
+Disallow: /SecureApplication.aspx
+Disallow: /SecureApproval.aspx
+Disallow: /Terms.Conditions.aspx
+Disallow: /FullDataValidation.js
+Disallow: /ShortDataValidation.js
+
+
+
+
+
+
+
+

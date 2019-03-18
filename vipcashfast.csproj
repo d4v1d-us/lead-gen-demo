@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1C56369-4F74-4857-B922-E89CEAA73E7A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vipcashfast</RootNamespace>
+    <AssemblyName>vipcashfast</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.aspx" />
+    <Content Include="Additional.Resources.aspx" />
+    <Content Include="App_Data\web_browsers_patch.xml" />
+    <Content Include="bin\FiftyOne.Foundation.dll" />
+    <Content Include="bin\vipcashfast.dll" />
+    <Content Include="bin\vipcashfast.pdb" />
+    <Content Include="Cash.Advances.Fees.aspx" />
+    <Content Include="Cash.Advances.Fact.Fiction.aspx" />
+    <Content Include="Cash.Advances.Questions.aspx" />
+    <Content Include="Cash.Advances.Requirements.aspx" />
+    <Content Include="Cash.Advances.Testimonials.aspx" />
+    <Content Include="Congratulations.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\template.css" />
+    <Content Include="Financial.Planning.Library\Avoid.Bankruptcy.aspx" />
+    <Content Include="Financial.Planning.Library\Bad.Credit.Cash.Advances.aspx" />
+    <Content Include="Financial.Planning.Library\Bad.Credit.Loans.aspx" />
+    <Content Include="Financial.Planning.Library\Bankruptcy.Debt.Consolidation.aspx" />
+    <Content Include="Financial.Planning.Library\Bankruptcy.aspx" />
+    <Content Include="Financial.Planning.Library\Buying.A.Home.aspx" />
+    <Content Include="Financial.Planning.Library\Cash.Advance.Payday.Loan.aspx" />
+    <Content Include="Financial.Planning.Library\Cheap.Unsecured.Loans.aspx" />
+    <Content Include="Financial.Planning.Library\Consolidation.Tips.aspx" />
+    <Content Include="Financial.Planning.Library\Credit.Card.Repayments.aspx" />
+    <Content Include="Financial.Planning.Library\Credit.Cards.aspx" />
+    <Content Include="Financial.Planning.Library\Credit.Report.Repair.aspx" />
+    <Content Include="Financial.Planning.Library\Debt.Assistance.Budgeting.Ideas.aspx" />
+    <Content Include="Financial.Planning.Library\Debt.Consolidation.aspx" />
+    <Content Include="Financial.Planning.Library\Emergency.Fund.Account.aspx" />
+    <Content Include="Financial.Planning.Library\Emergency.Loan.aspx" />
+    <Content Include="Financial.Planning.Library\Fast.Cash.Advances.aspx" />
+    <Content Include="Financial.Planning.Library\Fast.Cash.Loan.aspx" />
+    <Content Include="Financial.Planning.Library\Fast.Cash.with.No.Faxing.aspx" />
+    <Content Include="Financial.Planning.Library\Fast.Payday.Loans.aspx" />
+    <Content Include="Financial.Planning.Library\Faxless.Payroll.Advance.aspx" />
+    <Content Include="Financial.Planning.Library\Finances.aspx" />
+    <Content Include="Financial.Planning.Library\Financial.Advice.aspx" />
+    <Content Include="Financial.Planning.Library\Financial.Budget.aspx" />
+    <Content Include="Financial.Planning.Library\Financial.Budgeting.aspx" />
+    <Content Include="Financial.Planning.Library\Financial.Planning.Library.aspx" />
+    <Content Include="Financial.Planning.Library\Financial.Planning.aspx" />
+    <Content Include="Financial.Planning.Library\Financial.Success.Tips.aspx" />
+    <Content Include="Financial.Planning.Library\First.Time.Home.Buyers.aspx" />
+    <Content Include="Financial.Planning.Library\How.To.Build.An.Emergency.Fund.aspx" />
+    <Content Include="Financial.Planning.Library\How.To.Find.The.Cash.Advance.That.Is.Right.For.You.aspx" />
+    <Content Include="Financial.Planning.Library\If.A.Short.Term.Financial.Need.Is.The.Problem.A.Cash.Advance.Is.The.Solution.aspx" />
+    <Content Include="Financial.Planning.Library\Instant.Cash.Loan.aspx" />
+    <Content Include="Financial.Planning.Library\Instant.Loan.aspx" />
+    <Content Include="Financial.Planning.Library\Instant.Personal.Loan.aspx" />
+    <Content Include="Financial.Planning.Library\Loans.To.Military.Personnel.aspx" />
+    <Content Include="Financial.Planning.Library\Money.Lending.Services.aspx" />
+    <Content Include="Financial.Planning.Library\Money.Management.aspx" />
+    <Content Include="Financial.Planning.Library\Mortgage.Loans.aspx" />
+    <Content Include="Financial.Planning.Library\Mortgage.Rates.aspx" />
+    <Content Include="Financial.Planning.Library\Need.To.Budget.But.Dont.Know.How.aspx" />
+    <Content Include="Financial.Planning.Library\No.Fax.Cash.Advances.aspx" />
+    <Content Include="Financial.Planning.Library\Paycheck.Advance.Loan.aspx" />
+    <Content Include="Financial.Planning.Library\Payday.Loan.aspx" />
+    <Content Include="Financial.Planning.Library\Payroll.Advances.aspx" />
+    <Content Include="Financial.Planning.Library\Personal.Finances.aspx" />
+    <Content Include="Financial.Planning.Library\Protect.Yourself.From.Identity.Fraud.aspx" />
+    <Content Include="Financial.Planning.Library\Quick.Personal.Loan.aspx" />
+    <Content Include="Financial.Planning.Library\Same.Day.Cash.Advance.aspx" />
+    <Content Include="Financial.Planning.Library\Saving.Tips.aspx" />
+    <Content Include="Financial.Planning.Library\Sell.Your.Home.aspx" />
+    <Content Include="Financial.Planning.Library\Unsecured.Loans.aspx" />
+    <Content Include="Financial.Planning.Library\When.A.Payday.Loan.Is.The.Best.Option.aspx" />
+    <Content Include="FullDataValidation.js" />
+    <Content Include="header.inc" />
+    <Content Include="images\100.jpg" />
+    <Content Include="images\fees.jpg" />
+    <Content Include="images\Fiscal.Payday.jpg" />
+    <Content Include="images\header1.jpg" />
+    <Content Include="images\joinournewsletter.jpg" />
+    <Content Include="images\LocalPaydayAdvance.jpg" />
+    <Content Include="images\mailer_2.jpg" />
+    <Content Include="images\Pioneer.Military.Loans.jpg" />
+    <Content Include="images\Saving.Pays.jpg" />
+    <Content Include="images\usa-money-direct.bmp" />
+    <Content Include="Privacy.Policy.aspx" />
+    <Content Include="robots.txt" />
+    <Content Include="SecureApproval.aspx" />
+    <Content Include="SecureHeader.inc" />
+    <Content Include="ShortDataValidation.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\benefitsforyou.jpg" />
+    <Content Include="images\cashadvance.jpg" />
+    <Content Include="images\easyas123.jpg" />
+    <Content Include="images\eazyapplication.jpg" />
+    <Content Include="images\Testimonial1.jpg" />
+    <Content Include="images\Testimonial2.jpg" />
+    <Content Include="images\Testimonial3.jpg" />
+    <Content Include="images\Testimonial4.jpg" />
+    <Content Include="images\Testimonials.jpg" />
+    <Content Include="images\vipservice.jpg" />
+    <Content Include="footer.inc" />
+    <Content Include="images\bottom.jpg" />
+    <Content Include="images\check.jpg" />
+    <Content Include="images\dropdown_pane_8bit.png" />
+    <Content Include="images\g-bu-mainnavbg.jpg" />
+    <Content Include="images\g-bu-mainnavsolutionsbg.jpg" />
+    <Content Include="images\h-bg-content.jpg" />
+    <Content Include="images\header.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\progressbar.gif" />
+    <Content Include="images\vipcashfastnow.jpg" />
+    <Content Include="images\vipcashfastpayday.gif" />
+    <Content Include="SecureApplication.aspx" />
+    <Content Include="sitemap.xml" />
+    <Content Include="Terms.Conditions.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Additional.Resources.aspx.cs">
+      <DependentUpon>Additional.Resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Additional.Resources.aspx.designer.cs">
+      <DependentUpon>Additional.Resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\DataAccess.cs" />
+    <Compile Include="App_Data\Lead.cs" />
+    <Compile Include="App_Data\AppSession.cs" />
+    <Compile Include="App_Data\SqlHelper.cs" />
+    <Compile Include="App_Data\User.cs" />
+    <Compile Include="App_Data\VenderInfo.cs" />
+    <Compile Include="Cash.Advances.Fees.aspx.cs">
+      <DependentUpon>Cash.Advances.Fees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cash.Advances.Fees.aspx.designer.cs">
+      <DependentUpon>Cash.Advances.Fees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cash.Advances.Fact.Fiction.aspx.cs">
+      <DependentUpon>Cash.Advances.Fact.Fiction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cash.Advances.Fact.Fiction.aspx.designer.cs">
+      <DependentUpon>Cash.Advances.Fact.Fiction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cash.Advances.Questions.aspx.cs">
+      <DependentUpon>Cash.Advances.Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cash.Advances.Questions.aspx.designer.cs">
+      <DependentUpon>Cash.Advances.Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cash.Advances.Requirements.aspx.cs">
+      <DependentUpon>Cash.Advances.Requirements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cash.Advances.Requirements.aspx.designer.cs">
+      <DependentUpon>Cash.Advances.Requirements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cash.Advances.Testimonials.aspx.cs">
+      <DependentUpon>Cash.Advances.Testimonials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cash.Advances.Testimonials.aspx.designer.cs">
+      <DependentUpon>Cash.Advances.Testimonials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Congratulations.aspx.cs">
+      <DependentUpon>Congratulations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Congratulations.aspx.designer.cs">
+      <DependentUpon>Congratulations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Avoid.Bankruptcy.aspx.cs">
+      <DependentUpon>Avoid.Bankruptcy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Avoid.Bankruptcy.aspx.designer.cs">
+      <DependentUpon>Avoid.Bankruptcy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Bad.Credit.Cash.Advances.aspx.cs">
+      <DependentUpon>Bad.Credit.Cash.Advances.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Bad.Credit.Cash.Advances.aspx.designer.cs">
+      <DependentUpon>Bad.Credit.Cash.Advances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Bad.Credit.Loans.aspx.cs">
+      <DependentUpon>Bad.Credit.Loans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Bad.Credit.Loans.aspx.designer.cs">
+      <DependentUpon>Bad.Credit.Loans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Bankruptcy.Debt.Consolidation.aspx.cs">
+      <DependentUpon>Bankruptcy.Debt.Consolidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Bankruptcy.Debt.Consolidation.aspx.designer.cs">
+      <DependentUpon>Bankruptcy.Debt.Consolidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Bankruptcy.aspx.cs">
+      <DependentUpon>Bankruptcy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Bankruptcy.aspx.designer.cs">
+      <DependentUpon>Bankruptcy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Buying.A.Home.aspx.cs">
+      <DependentUpon>Buying.A.Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Buying.A.Home.aspx.designer.cs">
+      <DependentUpon>Buying.A.Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Cash.Advance.Payday.Loan.aspx.cs">
+      <DependentUpon>Cash.Advance.Payday.Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Cash.Advance.Payday.Loan.aspx.designer.cs">
+      <DependentUpon>Cash.Advance.Payday.Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Cheap.Unsecured.Loans.aspx.cs">
+      <DependentUpon>Cheap.Unsecured.Loans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Cheap.Unsecured.Loans.aspx.designer.cs">
+      <DependentUpon>Cheap.Unsecured.Loans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Consolidation.Tips.aspx.cs">
+      <DependentUpon>Consolidation.Tips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Consolidation.Tips.aspx.designer.cs">
+      <DependentUpon>Consolidation.Tips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Credit.Card.Repayments.aspx.cs">
+      <DependentUpon>Credit.Card.Repayments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Credit.Card.Repayments.aspx.designer.cs">
+      <DependentUpon>Credit.Card.Repayments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Credit.Cards.aspx.cs">
+      <DependentUpon>Credit.Cards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Credit.Cards.aspx.designer.cs">
+      <DependentUpon>Credit.Cards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Credit.Report.Repair.aspx.cs">
+      <DependentUpon>Credit.Report.Repair.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Credit.Report.Repair.aspx.designer.cs">
+      <DependentUpon>Credit.Report.Repair.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Debt.Assistance.Budgeting.Ideas.aspx.cs">
+      <DependentUpon>Debt.Assistance.Budgeting.Ideas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Debt.Assistance.Budgeting.Ideas.aspx.designer.cs">
+      <DependentUpon>Debt.Assistance.Budgeting.Ideas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Debt.Consolidation.aspx.cs">
+      <DependentUpon>Debt.Consolidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Debt.Consolidation.aspx.designer.cs">
+      <DependentUpon>Debt.Consolidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Emergency.Fund.Account.aspx.cs">
+      <DependentUpon>Emergency.Fund.Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Emergency.Fund.Account.aspx.designer.cs">
+      <DependentUpon>Emergency.Fund.Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Emergency.Loan.aspx.cs">
+      <DependentUpon>Emergency.Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Emergency.Loan.aspx.designer.cs">
+      <DependentUpon>Emergency.Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Fast.Cash.Advances.aspx.cs">
+      <DependentUpon>Fast.Cash.Advances.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Fast.Cash.Advances.aspx.designer.cs">
+      <DependentUpon>Fast.Cash.Advances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Fast.Cash.Loan.aspx.cs">
+      <DependentUpon>Fast.Cash.Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Fast.Cash.Loan.aspx.designer.cs">
+      <DependentUpon>Fast.Cash.Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Fast.Cash.with.No.Faxing.aspx.cs">
+      <DependentUpon>Fast.Cash.with.No.Faxing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Fast.Cash.with.No.Faxing.aspx.designer.cs">
+      <DependentUpon>Fast.Cash.with.No.Faxing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Fast.Payday.Loans.aspx.cs">
+      <DependentUpon>Fast.Payday.Loans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Fast.Payday.Loans.aspx.designer.cs">
+      <DependentUpon>Fast.Payday.Loans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Faxless.Payroll.Advance.aspx.cs">
+      <DependentUpon>Faxless.Payroll.Advance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Faxless.Payroll.Advance.aspx.designer.cs">
+      <DependentUpon>Faxless.Payroll.Advance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Finances.aspx.cs">
+      <DependentUpon>Finances.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Finances.aspx.designer.cs">
+      <DependentUpon>Finances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Advice.aspx.cs">
+      <DependentUpon>Financial.Advice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Advice.aspx.designer.cs">
+      <DependentUpon>Financial.Advice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Budget.aspx.cs">
+      <DependentUpon>Financial.Budget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Budget.aspx.designer.cs">
+      <DependentUpon>Financial.Budget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Budgeting.aspx.cs">
+      <DependentUpon>Financial.Budgeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Budgeting.aspx.designer.cs">
+      <DependentUpon>Financial.Budgeting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Planning.Library.aspx.cs">
+      <DependentUpon>Financial.Planning.Library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Planning.Library.aspx.designer.cs">
+      <DependentUpon>Financial.Planning.Library.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Planning.aspx.cs">
+      <DependentUpon>Financial.Planning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Planning.aspx.designer.cs">
+      <DependentUpon>Financial.Planning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Success.Tips.aspx.cs">
+      <DependentUpon>Financial.Success.Tips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Financial.Success.Tips.aspx.designer.cs">
+      <DependentUpon>Financial.Success.Tips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\First.Time.Home.Buyers.aspx.cs">
+      <DependentUpon>First.Time.Home.Buyers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\First.Time.Home.Buyers.aspx.designer.cs">
+      <DependentUpon>First.Time.Home.Buyers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\How.To.Build.An.Emergency.Fund.aspx.cs">
+      <DependentUpon>How.To.Build.An.Emergency.Fund.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\How.To.Build.An.Emergency.Fund.aspx.designer.cs">
+      <DependentUpon>How.To.Build.An.Emergency.Fund.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\How.To.Find.The.Cash.Advance.That.Is.Right.For.You.aspx.cs">
+      <DependentUpon>How.To.Find.The.Cash.Advance.That.Is.Right.For.You.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\How.To.Find.The.Cash.Advance.That.Is.Right.For.You.aspx.designer.cs">
+      <DependentUpon>How.To.Find.The.Cash.Advance.That.Is.Right.For.You.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\If.A.Short.Term.Financial.Need.Is.The.Problem.A.Cash.Advance.Is.The.Solution.aspx.cs">
+      <DependentUpon>If.A.Short.Term.Financial.Need.Is.The.Problem.A.Cash.Advance.Is.The.Solution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\If.A.Short.Term.Financial.Need.Is.The.Problem.A.Cash.Advance.Is.The.Solution.aspx.designer.cs">
+      <DependentUpon>If.A.Short.Term.Financial.Need.Is.The.Problem.A.Cash.Advance.Is.The.Solution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Instant.Cash.Loan.aspx.cs">
+      <DependentUpon>Instant.Cash.Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Instant.Cash.Loan.aspx.designer.cs">
+      <DependentUpon>Instant.Cash.Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Instant.Loan.aspx.cs">
+      <DependentUpon>Instant.Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Instant.Loan.aspx.designer.cs">
+      <DependentUpon>Instant.Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Instant.Personal.Loan.aspx.cs">
+      <DependentUpon>Instant.Personal.Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Instant.Personal.Loan.aspx.designer.cs">
+      <DependentUpon>Instant.Personal.Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Loans.To.Military.Personnel.aspx.cs">
+      <DependentUpon>Loans.To.Military.Personnel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Loans.To.Military.Personnel.aspx.designer.cs">
+      <DependentUpon>Loans.To.Military.Personnel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Money.Lending.Services.aspx.cs">
+      <DependentUpon>Money.Lending.Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Money.Lending.Services.aspx.designer.cs">
+      <DependentUpon>Money.Lending.Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Money.Management.aspx.cs">
+      <DependentUpon>Money.Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Money.Management.aspx.designer.cs">
+      <DependentUpon>Money.Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Mortgage.Loans.aspx.cs">
+      <DependentUpon>Mortgage.Loans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Mortgage.Loans.aspx.designer.cs">
+      <DependentUpon>Mortgage.Loans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Mortgage.Rates.aspx.cs">
+      <DependentUpon>Mortgage.Rates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Mortgage.Rates.aspx.designer.cs">
+      <DependentUpon>Mortgage.Rates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Need.To.Budget.But.Dont.Know.How.aspx.cs">
+      <DependentUpon>Need.To.Budget.But.Dont.Know.How.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Need.To.Budget.But.Dont.Know.How.aspx.designer.cs">
+      <DependentUpon>Need.To.Budget.But.Dont.Know.How.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\No.Fax.Cash.Advances.aspx.cs">
+      <DependentUpon>No.Fax.Cash.Advances.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\No.Fax.Cash.Advances.aspx.designer.cs">
+      <DependentUpon>No.Fax.Cash.Advances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Paycheck.Advance.Loan.aspx.cs">
+      <DependentUpon>Paycheck.Advance.Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Paycheck.Advance.Loan.aspx.designer.cs">
+      <DependentUpon>Paycheck.Advance.Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Payday.Loan.aspx.cs">
+      <DependentUpon>Payday.Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Payday.Loan.aspx.designer.cs">
+      <DependentUpon>Payday.Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Payroll.Advances.aspx.cs">
+      <DependentUpon>Payroll.Advances.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Payroll.Advances.aspx.designer.cs">
+      <DependentUpon>Payroll.Advances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Personal.Finances.aspx.cs">
+      <DependentUpon>Personal.Finances.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Personal.Finances.aspx.designer.cs">
+      <DependentUpon>Personal.Finances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Protect.Yourself.From.Identity.Fraud.aspx.cs">
+      <DependentUpon>Protect.Yourself.From.Identity.Fraud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Protect.Yourself.From.Identity.Fraud.aspx.designer.cs">
+      <DependentUpon>Protect.Yourself.From.Identity.Fraud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Quick.Personal.Loan.aspx.cs">
+      <DependentUpon>Quick.Personal.Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Quick.Personal.Loan.aspx.designer.cs">
+      <DependentUpon>Quick.Personal.Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Same.Day.Cash.Advance.aspx.cs">
+      <DependentUpon>Same.Day.Cash.Advance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Same.Day.Cash.Advance.aspx.designer.cs">
+      <DependentUpon>Same.Day.Cash.Advance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Saving.Tips.aspx.cs">
+      <DependentUpon>Saving.Tips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Saving.Tips.aspx.designer.cs">
+      <DependentUpon>Saving.Tips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Sell.Your.Home.aspx.cs">
+      <DependentUpon>Sell.Your.Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Sell.Your.Home.aspx.designer.cs">
+      <DependentUpon>Sell.Your.Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Unsecured.Loans.aspx.cs">
+      <DependentUpon>Unsecured.Loans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\Unsecured.Loans.aspx.designer.cs">
+      <DependentUpon>Unsecured.Loans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\When.A.Payday.Loan.Is.The.Best.Option.aspx.cs">
+      <DependentUpon>When.A.Payday.Loan.Is.The.Best.Option.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial.Planning.Library\When.A.Payday.Loan.Is.The.Best.Option.aspx.designer.cs">
+      <DependentUpon>When.A.Payday.Loan.Is.The.Best.Option.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privacy.Policy.aspx.cs">
+      <DependentUpon>Privacy.Policy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privacy.Policy.aspx.designer.cs">
+      <DependentUpon>Privacy.Policy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecureApplication.aspx.cs">
+      <DependentUpon>SecureApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecureApplication.aspx.designer.cs">
+      <DependentUpon>SecureApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecureApproval.aspx.cs">
+      <DependentUpon>SecureApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecureApproval.aspx.designer.cs">
+      <DependentUpon>SecureApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Terms.Conditions.aspx.cs">
+      <DependentUpon>Terms.Conditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Terms.Conditions.aspx.designer.cs">
+      <DependentUpon>Terms.Conditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PWUser_Data\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\wurfl.xml.gz" />
+    <None Include="Properties\PublishProfiles\vipcashfast.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PWUser_Data\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PWUser_Data\tss.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://www.tridentsecuredata.com/cm_soap.php%3fwsdl">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\PWUser_Data\</RelPath>
+      <UpdateFromURL>https://www.tridentsecuredata.com/cm_soap.php%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>vipcashfast_PWUser_Data_tssService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3572</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

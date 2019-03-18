@@ -1,0 +1,97 @@
+﻿
+.buttonNormal
+{
+	background-color: lime;
+	color:black;
+	font-family:"Verdana";
+	border:solid 1px;
+	border-color:#507CD1;
+	cursor:hand;
+		
+}
+
+.y25{ font-style:italic; color:#F79003; font-weight:bold; padding:0px 0px 0px 0px; font-size:25px; text-align:center;}
+.y20{ font-style:italic; color:#F79003; font-weight:bold; padding:0px 0px 0px 0px; font-size:20px; text-align:center;}
+
+.b35{ font-style:italic; color:#1C4388; font-weight:bold; padding:0px 0px 0px 0px; font-size:35px; text-align:center;}
+
+.b25{ font-style:italic; color:#1C4388; font-weight:bold; padding:0px 0px 0px 0px; font-size:25px; text-align:center;}
+.b20{ font-style:italic; color:#1C4388; font-weight:bold; padding:0px 0px 0px 0px; font-size:20px; text-align:center;}
+.b19{ font-style:italic; color:#1C4388; font-weight:bold; padding:0px 0px 0px 0px; font-size:19px; text-align:center;}
+.b18{ font-style:italic; color:#1C4388; font-weight:bold; padding:0px 0px 0px 0px; font-size:18px; text-align:center;}
+.b17{ font-style:italic; color:#1C4388; font-weight:bold; padding:0px 0px 0px 0px; font-size:17px; text-align:center;}
+.b16{ font-style:italic; color:#1C4388; font-weight:bold; padding:0px 0px 0px 0px; font-size:16px; text-align:center;}
+.b15{ font-style:italic; color:#1C4388; font-weight:bold; padding:0px 0px 0px 0px; font-size:15px; text-align:center;}
+
+.b18-plain-bold{ color:#1C4388; font-weight:bold; padding:0px 0px 0px 0px; font-size:18px; text-align:center;}
+
+.b18-plain{  color:#1C4388; padding:0px 0px 0px 0px; font-size:18px; text-align:center;}
+.b16-plain{  color:#1C4388; padding:0px 0px 0px 0px; font-size:16px; text-align:center;}
+.b15-plain{  color:#1C4388; padding:0px 0px 0px 0px; font-size:15px; text-align:center;}
+.b14-plain{  color:#1C4388; padding:0px 0px 0px 0px; font-size:14px; text-align:center;}
+
+.r30{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:30px; text-align:center;}
+.r25{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:25px; text-align:center;}
+.r20{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:20px; text-align:center;}
+.r10{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:10px; text-align:center;}
+
+
+
+.r10{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:10px; text-align:center;}
+.r11{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:11px; text-align:center;}
+.r12{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:12px; text-align:center;}
+.r15{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:15px; text-align:center;}
+.r16{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:16px; text-align:center;}
+.r18{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:18px; text-align:center;}
+.r20{ font-style:italic; color:Red; font-weight:bold; padding:0px 0px 0px 0px; font-size:20px; text-align:center;}
+
+.w15{ font-style:italic; color:White; font-weight:bold; padding:0px 0px 0px 0px; font-size:15px; text-align:center;}
+.w16{ font-style:italic; color:White; font-weight:bold; padding:0px 0px 0px 0px; font-size:16px; text-align:center;}
+.w17{ font-style:italic; color:White; font-weight:bold; padding:0px 0px 0px 0px; font-size:17px; text-align:center;}
+.w18{ font-style:italic; color:White; font-weight:bold; padding:0px 0px 0px 0px; font-size:18px; text-align:center;}
+
+.black9-plain{  color:Black; padding:0px 0px 0px 0px; font-size:9px; text-align:center;}
+
+
+.g10-plain{ color:#6E6D6D; padding:0px 0px 0px 0px; font-size:10px;}
+
+.green40{ font-style:italic; color:Green; font-weight:bold; padding:0px 0px 0px 0px; font-size:40px; text-align:center;}
+.green35{ font-style:italic; color:Green; font-weight:bold; padding:0px 0px 0px 0px; font-size:35px; text-align:center;}
+.green30{ font-style:italic; color:Green; font-weight:bold; padding:0px 0px 0px 0px; font-size:30px; text-align:center;}
+.green20{ font-style:italic; color:Green; font-weight:bold; padding:0px 0px 0px 0px; font-size:20px; text-align:center;}
+.green15{ font-style:italic; color:Green; font-weight:bold; padding:0px 0px 0px 0px; font-size:15px; text-align:center;}
+
+.white40{ font-style:italic; color:White; font-weight:bold; padding:0px 0px 0px 0px; font-size:40px; text-align:center;}
+.white30{ font-style:italic; color:White; font-weight:bold; padding:0px 0px 0px 0px; font-size:30px; text-align:center;}
+.white20{ font-style:italic; color:White; font-weight:bold; padding:0px 0px 0px 0px; font-size:20px; text-align:center;}
+.white10{ color:White; padding:0px 0px 0px 0px; font-size:10px; text-align:center; text-decoration:none;}
+
+.linkwhite20{ font-style:italic; color:White; padding:0px 0px 0px 0px; font-size:20px; text-align:center; text-decoration:none;}
+.linkwhite16{color:White; padding:0px 0px 0px 0px; font-size:16px; text-align:center; text-decoration:none;}
+
+
+.FPlinks a {
+	color: #1C4388;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+ .FPlinks a:hover {
+	color: #1C4388;
+	text-decoration:underline;
+	font-size: 16px;
+}
+
+.Glinks a {
+	color: green;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight:bold;
+}
+
+ .Glinks a:hover {
+	color: green;
+	text-decoration:underline;
+	font-size: 18px;
+	font-weight:bold;
+}
